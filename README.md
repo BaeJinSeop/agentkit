@@ -1,6 +1,7 @@
 # agentkit
 
 [![CI](https://github.com/BaeJinSeop/agentkit/actions/workflows/ci.yml/badge.svg)](https://github.com/BaeJinSeop/agentkit/actions/workflows/ci.yml)
+[![JitPack](https://jitpack.io/v/BaeJinSeop/agentkit.svg)](https://jitpack.io/#BaeJinSeop/agentkit)
 
 LLM 에이전트를 만들 때 자주 쓰는 **프레임워크 비의존 Kotlin 유틸리티 3종**을 모은 작은 라이브러리입니다.
 특정 웹 프레임워크에 묶이지 않고 Kotlin stdlib + Jackson 2 + JDK HttpClient 만 씁니다.
@@ -8,6 +9,24 @@ LLM 에이전트를 만들 때 자주 쓰는 **프레임워크 비의존 Kotlin 
 - `dev.jinseop.agentkit.http.HttpFetcher` — 허용목록 기반 외부 GET 요청
 - `dev.jinseop.agentkit.chunk.StructuredChunker` — 표 형태 자료 청킹
 - `dev.jinseop.agentkit.text.ResponseSanitizer` — LLM 출력 정리
+
+## 설치
+
+[JitPack](https://jitpack.io/#BaeJinSeop/agentkit) 으로 받습니다.
+
+```kotlin
+// settings.gradle.kts 또는 build.gradle.kts 의 repositories
+repositories {
+    mavenCentral()
+    maven { url = uri("https://jitpack.io") }
+}
+```
+
+```kotlin
+dependencies {
+    implementation("com.github.BaeJinSeop:agentkit:0.1.0")
+}
+```
 
 ## HttpFetcher
 

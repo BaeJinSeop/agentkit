@@ -1,5 +1,7 @@
 # agentkit
 
+[![CI](https://github.com/BaeJinSeop/agentkit/actions/workflows/ci.yml/badge.svg)](https://github.com/BaeJinSeop/agentkit/actions/workflows/ci.yml)
+
 LLM 에이전트를 만들 때 자주 쓰는 **프레임워크 비의존 Kotlin 유틸리티 3종**을 모은 작은 라이브러리입니다.
 특정 웹 프레임워크에 묶이지 않고 Kotlin stdlib + Jackson 2 + JDK HttpClient 만 씁니다.
 
